@@ -18,8 +18,10 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Using Docker
 
-- Only pre-requisite is having docker and docker-compose installed
+- Only pre-requisite is having docker and docker-compose installed 
+ > To install docker and necessary tools refer to the official documentation [here](https://github.com/IEEEKeralaSection/rescuekerala/pull/445)
 - Execute `sh docker.sh` in this directory (if you do not have permissions on the `docker.sh`, do `chmod +x docker.sh`)
+> Now you can open the site in a browser (localhost:8000) and continue test/development. Since the local directory (rescuekerala) is mapped to the container as "/rescuekerala", whatever changes that is made in the host directory are reflected inside the container too. When the source files are changed in the host machine, the webserver typically restarts automatically, the UI needs to be refreshed
 - Server will start running at `localhost:8000`
 - `Ctrl+C` to stop
 
